@@ -152,6 +152,7 @@ TEST(mathVec3Test, test2) {
     ExpectEq(vec3 == cc::Vec3(0.5, 0, 0), true);
     // fromColor
     logLabel = "test whether vec3 fromColor function";
-    
+    vec3 = cc::Vec3::fromColor(255);
+    ExpectEq(vec3.z == 1, true);
 }
 

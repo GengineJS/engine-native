@@ -7,14 +7,10 @@
 
 #ifndef utils_h
 #define utils_h
-#include <math.h>
+#include "cocos/math/Math.h"
 static std::string logLabel;
 static bool IsEqualF(float l, float r) {
-    const double esp = 1e-6;
-    if(fabs(l - r) <= esp) {
-        return true;
-    }
-    return false;
+    return cc::math::IsEqualF(l, r);
 };
 static void ExpectEq(bool lf, bool rt) {
     EXPECT_EQ(lf, rt) << "ERROR in: " <<logLabel;

@@ -9,9 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		90E8B5BA302A4CBBBFB5EE08 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 2CD2BE5F720443798822D3F1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 207E61B1C8334AD582F3C4E6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				69A80BB540314DBAB55345F9 /* CMake Rules */,
+				7660F38D9AAF41D9AA8D2FCF /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -20,28 +20,28 @@
 		};
 		CAE98F9241274BE791FA2FA8 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 12B900E72F4746E5809B325C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 92F58116635A49E9BB69A736 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				7F7815F2FCD847BDB254CEB7 /* CMake Rules */,
+				C54FC0759CF449148D3B7ECF /* CMake Rules */,
 			);
 			dependencies = (
-				A3ABE92B3B7442BABBD7BF34 /* PBXTargetDependency */,
-				D1F0D183E14C45D6872A22D3 /* PBXTargetDependency */,
-				06DD392D9E9D40B6B8236D79 /* PBXTargetDependency */,
-				7005DEBA8F464930B1797ECD /* PBXTargetDependency */,
-				40C50002389640CD88B24B81 /* PBXTargetDependency */,
+				D5EDF4AED77540C8B12E2F26 /* PBXTargetDependency */,
+				D584813B5D624BA2A9E1932B /* PBXTargetDependency */,
+				2DF2F14BD9734FB6A99BB3AE /* PBXTargetDependency */,
+				32EA9D73665C4A5493701648 /* PBXTargetDependency */,
+				D97C33906B054F3280A7171F /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		F61A9CE67F21425A9D2CFB74 /* install */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 493A276FC1744384B502B3A9 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildConfigurationList = 6EE2002E84DB45EBB2C9297C /* Build configuration list for PBXAggregateTarget "install" */;
 			buildPhases = (
-				5705A5652B2E4D5786B820D3 /* CMake PostBuild Rules */,
+				9627B2B6363446FCBDFE83B5 /* CMake PostBuild Rules */,
 			);
 			dependencies = (
-				4FEAEC452B2944D692E67B0A /* PBXTargetDependency */,
+				143A6E3EB5664868A673A1F7 /* PBXTargetDependency */,
 			);
 			name = install;
 			productName = install;
@@ -49,242 +49,242 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0BCD341B8B5842A5A9CDA504 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FA81EC6953764AA39809511F /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */; };
-		4A579089BCDC4020BC773B34 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */ = {isa = PBXBuildFile; fileRef = 5E58BAF6A7B049A79504029D /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */; };
-		81AE33B9917B45B1A88A0CBA /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */ = {isa = PBXBuildFile; fileRef = F05FD2B8D18A4C398CB5F642 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */; };
-		83A4720CC2884E07A37F4180 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 09FDB36B82624864B0DDE3A5 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */; };
-		96A422951C024B4C9549D515 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */ = {isa = PBXBuildFile; fileRef = D98869385C4F44DEAF6766A3 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */; };
-		AA205501AF1646C8B56A87F6 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 657B1EC19C154DD4963CFC6F /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */; };
-		AAC15EB5623F4DE79755EA59 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = ACBD7BA5BBBF4292A080CEA6 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */; };
-		C7749AA9B6C1437E99E78685 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */ = {isa = PBXBuildFile; fileRef = 602F2E2546114DA5B8E93F11 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */; };
+		0704729EA99D4A94B9D36C75 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */ = {isa = PBXBuildFile; fileRef = A0D49235C7F84C13885B6131 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */; };
+		21037205A7C7406A830C790A /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CAFF3D4610D242D990DFEB91 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */; };
+		3D9F887978DC40D391A9381D /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */ = {isa = PBXBuildFile; fileRef = D881FDE97F2B4A6D80D8B799 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */; };
+		40976E5AA4C441AEB9AC419B /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */ = {isa = PBXBuildFile; fileRef = 77E6A6566CEB4C7DA73A9D4D /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */; };
+		DB344F8549EB4141A8BA5FE2 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C3A1EDB8194B4AE78677B792 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */; };
+		E0CF0D35252C4D419D01D156 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */ = {isa = PBXBuildFile; fileRef = AD8C885E99374C01BC095549 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */; };
+		E196CA6493074B1CB3D50FE8 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FCE8E8CA8A9945D9B35E7C0E /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */; };
+		FA883C2983B94FFBAB054A57 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 567F320D43EB4C3A87ED69E0 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		2BA8D946461B4E0A85193853 /* MinSizeRel */ = {
+		1EB7AD88D7394B7085DBD1C4 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		A77C0A01E3AD4593BF20EDAF /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		AA8F6A6ACD4F4849A3399ADD /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		C39B1EAD435142C4B8CC34C5 /* Debug */ = {
+		3EABF76ECBFD4B2B8AEA0EC7 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
+		96C7B0F739F3474ABDF3766A /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		E6EB01C928BF43448428DFB3 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		06DEF11152E7437D8001E5D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2CF57F332D464DA9800A5FEE;
-			remoteInfo = gtest_main;
-		};
-		4BEAB66981DE44558ECE6598 /* PBXContainerItemProxy */ = {
+		0434DA0D0C56417A837CD7CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 067813A474F847C299EDD687;
 			remoteInfo = gtest;
 		};
-		5CC0DD8FD0F940F2883AD0D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 900F942FB1F04B13B7B06C00;
-			remoteInfo = gmock;
-		};
-		6FC3B300E1C24397878AC885 /* PBXContainerItemProxy */ = {
+		380791B0CA5E4A24BCEBA6C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 067813A474F847C299EDD687;
 			remoteInfo = gtest;
 		};
-		98753B125360444590BDE2ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 900F942FB1F04B13B7B06C00;
-			remoteInfo = gmock;
-		};
-		A807D03714A24AFEA893CF8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9ED6CF165B24CF3A3B711A1;
-			remoteInfo = gmock_main;
-		};
-		BB997954AEF94580971C043C /* PBXContainerItemProxy */ = {
+		5B8C4E3CAD40479395A6251A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 067813A474F847C299EDD687;
 			remoteInfo = gtest;
 		};
-		D97A6169D46A4CDFAAC90C87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 067813A474F847C299EDD687;
-			remoteInfo = gtest;
-		};
-		DCA9DEE52B534FFF922F50B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 90E8B5BA302A4CBBBFB5EE08;
-			remoteInfo = ZERO_CHECK;
-		};
-		EAB62F8E315E49B2BABA9F29 /* PBXContainerItemProxy */ = {
+		71F154FC54444898A383B9EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CAE98F9241274BE791FA2FA8;
 			remoteInfo = ALL_BUILD;
 		};
+		8E09D9A2B2334B57BF8AD0AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 900F942FB1F04B13B7B06C00;
+			remoteInfo = gmock;
+		};
+		8F0D887623E14AA4B0608D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF57F332D464DA9800A5FEE;
+			remoteInfo = gtest_main;
+		};
+		9072268B4B9540BCA0524068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 067813A474F847C299EDD687;
+			remoteInfo = gtest;
+		};
+		B864557E0E40440BAD5DE311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9ED6CF165B24CF3A3B711A1;
+			remoteInfo = gmock_main;
+		};
+		D45F75F3A72046F391D853EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 900F942FB1F04B13B7B06C00;
+			remoteInfo = gmock;
+		};
+		F31DCC55FA5342E29E633A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DC7D56C8D542A89E126BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E8B5BA302A4CBBBFB5EE08;
+			remoteInfo = ZERO_CHECK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09FDB36B82624864B0DDE3A5 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googlemock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		0E905847207B48BC99CDE091 /* gmock */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgmockd.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		28AD238FF8BC41ED939CEA48 /* gtest */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtestd.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E58BAF6A7B049A79504029D /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtest_main.cc; path = googletest/src/gtest_main.cc; sourceTree = SOURCE_ROOT; };
-		602F2E2546114DA5B8E93F11 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gmock-all.cc"; path = "googlemock/src/gmock-all.cc"; sourceTree = SOURCE_ROOT; };
-		657B1EC19C154DD4963CFC6F /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googletest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		7825E04681124D9DBF348F49 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		7D384C261D6F411195073C40 /* gtest_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtest_maind.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACBD7BA5BBBF4292A080CEA6 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googletest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		D98869385C4F44DEAF6766A3 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "googletest/src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
-		F05FD2B8D18A4C398CB5F642 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gmock_main.cc; path = googlemock/src/gmock_main.cc; sourceTree = SOURCE_ROOT; };
-		FA61EB8AC172413295115F30 /* gmock_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgmock_maind.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA81EC6953764AA39809511F /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googlemock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3B352CA4E17441FAAE4A0A2E /* gtest_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtest_maind.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		567F320D43EB4C3A87ED69E0 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googletest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		70C454383A50450DBFAB6B48 /* gmock_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgmock_maind.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E6A6566CEB4C7DA73A9D4D /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gmock-all.cc"; path = "googlemock/src/gmock-all.cc"; sourceTree = SOURCE_ROOT; };
+		A0D49235C7F84C13885B6131 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtest_main.cc; path = googletest/src/gtest_main.cc; sourceTree = SOURCE_ROOT; };
+		AD8C885E99374C01BC095549 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gmock_main.cc; path = googlemock/src/gmock_main.cc; sourceTree = SOURCE_ROOT; };
+		B11078CB93B84DD0954B89D5 /* gmock */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgmockd.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A1EDB8194B4AE78677B792 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googlemock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CAFF3D4610D242D990DFEB91 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googlemock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D369DDFCE6D245D89320B297 /* gtest */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtestd.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D881FDE97F2B4A6D80D8B799 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "googletest/src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		F48AE72C4E544FD4B0937716 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FCE8E8CA8A9945D9B35E7C0E /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googletest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		0B123BE1B8884EA09E832C4B /* Source Files */ = {
+		042672D72CDF485F896AA740 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				602F2E2546114DA5B8E93F11 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */,
+				77E6A6566CEB4C7DA73A9D4D /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		0CC8CFBCC5F54948A8467F97 /* CMake Rules */ = {
+		105F376587C34CF9935FEE61 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD8C885E99374C01BC095549 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1AED7E9662834038A780A1CB /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		2E8BE7EEF09C409E921CB4AB /* gtest */ = {
+		26B769585DA441C5BA571BDB /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				9713D76A7B1247F58E0BED1E /* Source Files */,
-				657B1EC19C154DD4963CFC6F /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */,
-			);
-			name = gtest;
-			sourceTree = "<group>";
-		};
-		40265FA1120747A585E7EEEE /* gmock */ = {
-			isa = PBXGroup;
-			children = (
-				0B123BE1B8884EA09E832C4B /* Source Files */,
-				09FDB36B82624864B0DDE3A5 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */,
-			);
-			name = gmock;
-			sourceTree = "<group>";
-		};
-		45426FFB61AB4A05AA5284C7 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				5E58BAF6A7B049A79504029D /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */,
+				D881FDE97F2B4A6D80D8B799 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		4C65846FD91544D5BBD62B7D /* gmock_main */ = {
+		29DDB0631C224AF59D65E730 /* gmock_main */ = {
 			isa = PBXGroup;
 			children = (
-				80D121BB73ED4D26B13FCE9D /* Source Files */,
-				FA81EC6953764AA39809511F /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */,
+				105F376587C34CF9935FEE61 /* Source Files */,
+				CAFF3D4610D242D990DFEB91 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */,
 			);
 			name = gmock_main;
 			sourceTree = "<group>";
 		};
-		531A7D72893C47C39B1900C4 /* gtest_main */ = {
+		611FD202C128491E9E58319B = {
 			isa = PBXGroup;
 			children = (
-				45426FFB61AB4A05AA5284C7 /* Source Files */,
-				ACBD7BA5BBBF4292A080CEA6 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */,
+				8DDDE58CEBB84D14A816DD17 /* ALL_BUILD */,
+				29DDB0631C224AF59D65E730 /* gmock_main */,
+				75F38F6ED46B46AAA5C18354 /* gmock */,
+				F241D88B261D41C883847FDC /* gtest_main */,
+				A1A6ADE36D9D49ACB871B7FA /* gtest */,
+				BAEECA25C8DB48419FFF4160 /* Products */,
 			);
-			name = gtest_main;
 			sourceTree = "<group>";
 		};
-		6870367DFF274BF9A37B7C10 /* Products */ = {
+		75F38F6ED46B46AAA5C18354 /* gmock */ = {
 			isa = PBXGroup;
 			children = (
-				0E905847207B48BC99CDE091 /* gmock */,
-				FA61EB8AC172413295115F30 /* gmock_main */,
-				28AD238FF8BC41ED939CEA48 /* gtest */,
-				7D384C261D6F411195073C40 /* gtest_main */,
+				042672D72CDF485F896AA740 /* Source Files */,
+				C3A1EDB8194B4AE78677B792 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/CMakeLists.txt */,
 			);
-			name = Products;
+			name = gmock;
 			sourceTree = "<group>";
 		};
-		80D121BB73ED4D26B13FCE9D /* Source Files */ = {
+		8DDDE58CEBB84D14A816DD17 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				F05FD2B8D18A4C398CB5F642 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		9595689968ED45F4A9B8A550 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				0CC8CFBCC5F54948A8467F97 /* CMake Rules */,
-				7825E04681124D9DBF348F49 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/CMakeLists.txt */,
+				1AED7E9662834038A780A1CB /* CMake Rules */,
+				F48AE72C4E544FD4B0937716 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		9713D76A7B1247F58E0BED1E /* Source Files */ = {
+		A1A6ADE36D9D49ACB871B7FA /* gtest */ = {
 			isa = PBXGroup;
 			children = (
-				D98869385C4F44DEAF6766A3 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */,
+				26B769585DA441C5BA571BDB /* Source Files */,
+				FCE8E8CA8A9945D9B35E7C0E /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */,
+			);
+			name = gtest;
+			sourceTree = "<group>";
+		};
+		BAEECA25C8DB48419FFF4160 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B11078CB93B84DD0954B89D5 /* gmock */,
+				70C454383A50450DBFAB6B48 /* gmock_main */,
+				D369DDFCE6D245D89320B297 /* gtest */,
+				3B352CA4E17441FAAE4A0A2E /* gtest_main */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDB61C94E25D4D9F93914A5F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0D49235C7F84C13885B6131 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		C3DF52662E0847DB9E824DEE = {
+		F241D88B261D41C883847FDC /* gtest_main */ = {
 			isa = PBXGroup;
 			children = (
-				9595689968ED45F4A9B8A550 /* ALL_BUILD */,
-				4C65846FD91544D5BBD62B7D /* gmock_main */,
-				40265FA1120747A585E7EEEE /* gmock */,
-				531A7D72893C47C39B1900C4 /* gtest_main */,
-				2E8BE7EEF09C409E921CB4AB /* gtest */,
-				6870367DFF274BF9A37B7C10 /* Products */,
+				CDB61C94E25D4D9F93914A5F /* Source Files */,
+				567F320D43EB4C3A87ED69E0 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/CMakeLists.txt */,
 			);
+			name = gtest_main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +292,9 @@
 /* Begin PBXNativeTarget section */
 		067813A474F847C299EDD687 /* gtest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 347715A28EF546E3AB9FC231 /* Build configuration list for PBXNativeTarget "gtest" */;
+			buildConfigurationList = 8F37BFA71DB747BC862232A5 /* Build configuration list for PBXNativeTarget "gtest" */;
 			buildPhases = (
-				3AFD31DFFD754FD3A066788A /* Sources */,
+				FC49B21B34B04838B6C8BD04 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -302,56 +302,56 @@
 			);
 			name = gtest;
 			productName = gtest;
-			productReference = 28AD238FF8BC41ED939CEA48 /* gtest */;
+			productReference = D369DDFCE6D245D89320B297 /* gtest */;
 			productType = "com.apple.product-type.library.static";
 		};
 		2CF57F332D464DA9800A5FEE /* gtest_main */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89DC8351FDFA4ED28FC4CA9D /* Build configuration list for PBXNativeTarget "gtest_main" */;
+			buildConfigurationList = 59C581056A094467B2BF8ACB /* Build configuration list for PBXNativeTarget "gtest_main" */;
 			buildPhases = (
-				8EF32B6DEADC413AACCCF605 /* Sources */,
+				49C725FE0C664C37B7696C43 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8691B54CA5C244A2B72D133A /* PBXTargetDependency */,
+				2B0CF15C95664FD795CE3ABE /* PBXTargetDependency */,
 			);
 			name = gtest_main;
 			productName = gtest_main;
-			productReference = 7D384C261D6F411195073C40 /* gtest_main */;
+			productReference = 3B352CA4E17441FAAE4A0A2E /* gtest_main */;
 			productType = "com.apple.product-type.library.static";
 		};
 		900F942FB1F04B13B7B06C00 /* gmock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0B1B26C93D34F99BE95EFCC /* Build configuration list for PBXNativeTarget "gmock" */;
+			buildConfigurationList = B08689DA30F6406D96200CAD /* Build configuration list for PBXNativeTarget "gmock" */;
 			buildPhases = (
-				E3A3253AFEA9479EAEE2BB15 /* Sources */,
+				A15046620F7D486B9DB3448D /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1217B825FA544F7296B4916F /* PBXTargetDependency */,
+				14AFE0EC996C4CC889EB8F52 /* PBXTargetDependency */,
 			);
 			name = gmock;
 			productName = gmock;
-			productReference = 0E905847207B48BC99CDE091 /* gmock */;
+			productReference = B11078CB93B84DD0954B89D5 /* gmock */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E9ED6CF165B24CF3A3B711A1 /* gmock_main */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BDCFEB8C8314BEC8AC9EE91 /* Build configuration list for PBXNativeTarget "gmock_main" */;
+			buildConfigurationList = 4136FB914D2B417C8D0B9F72 /* Build configuration list for PBXNativeTarget "gmock_main" */;
 			buildPhases = (
-				A808F52818234EF9A17AFD48 /* Sources */,
+				5C23647578E84747ABF7343C /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3B1C6650D0594A21990D25A5 /* PBXTargetDependency */,
-				E6EBF3A79932459C961237F1 /* PBXTargetDependency */,
+				1A00DC1A090D4EABB06B1E1C /* PBXTargetDependency */,
+				8B0620F5064F4EA58AD401CF /* PBXTargetDependency */,
 			);
 			name = gmock_main;
 			productName = gmock_main;
-			productReference = FA61EB8AC172413295115F30 /* gmock_main */;
+			productReference = 70C454383A50450DBFAB6B48 /* gmock_main */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -363,18 +363,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1020;
 			};
-			buildConfigurationList = B65DD93A072A4CCC8C4F0465 /* Build configuration list for PBXProject "googletest-distribution" */;
+			buildConfigurationList = EC7F5A01E7F045A9B513B769 /* Build configuration list for PBXProject "googletest-distribution" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				C39B1EAD435142C4B8CC34C5 /* Debug */,
-				A77C0A01E3AD4593BF20EDAF /* Release */,
-				2BA8D946461B4E0A85193853 /* MinSizeRel */,
-				AA8F6A6ACD4F4849A3399ADD /* RelWithDebInfo */,
+				3EABF76ECBFD4B2B8AEA0EC7 /* Debug */,
+				E6EB01C928BF43448428DFB3 /* Release */,
+				1EB7AD88D7394B7085DBD1C4 /* MinSizeRel */,
+				96C7B0F739F3474ABDF3766A /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = C3DF52662E0847DB9E824DEE;
+			mainGroup = 611FD202C128491E9E58319B;
 			projectDirPath = "../googletest-src";
 			projectRoot = "";
 			targets = (
@@ -390,7 +390,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		474C367D5A4D4577A6D09F76 = {
+		13A4531D65A74B34BDFE05CE = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,33 +405,7 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		5705A5652B2E4D5786B820D3 /* CMake PostBuild Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake PostBuild Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build -f /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
-			showEnvVarsInLog = 0;
-		};
-		6167459BA8364A1A9EF4EE90 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		69A80BB540314DBAB55345F9 /* CMake Rules */ = {
+		7660F38D9AAF41D9AA8D2FCF /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -442,7 +416,33 @@ exit 0";
 			shellScript = "make -C /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build -f /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
-		7F7815F2FCD847BDB254CEB7 /* CMake Rules */ = {
+		9627B2B6363446FCBDFE83B5 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build -f /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		C121165EEBDF4210B6AE1C1C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C54FC0759CF449148D3B7ECF /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,7 +453,7 @@ exit 0";
 			shellScript = "make -C /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build -f /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
-		FC50534B6D3B40DDAFBC073C = {
+		D3267E38C95E4493A03EA23D = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,95 +471,95 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3AFD31DFFD754FD3A066788A /* Sources */ = {
+		49C725FE0C664C37B7696C43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A422951C024B4C9549D515 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */,
+				0704729EA99D4A94B9D36C75 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EF32B6DEADC413AACCCF605 /* Sources */ = {
+		5C23647578E84747ABF7343C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A579089BCDC4020BC773B34 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest_main.cc */,
+				E0CF0D35252C4D419D01D156 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A808F52818234EF9A17AFD48 /* Sources */ = {
+		A15046620F7D486B9DB3448D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AE33B9917B45B1A88A0CBA /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock_main.cc */,
+				40976E5AA4C441AEB9AC419B /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3A3253AFEA9479EAEE2BB15 /* Sources */ = {
+		FC49B21B34B04838B6C8BD04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7749AA9B6C1437E99E78685 /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/src/gmock-all.cc */,
+				3D9F887978DC40D391A9381D /* /Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/src/gtest-all.cc */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06DD392D9E9D40B6B8236D79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 900F942FB1F04B13B7B06C00 /* gmock */;
-			targetProxy = 5CC0DD8FD0F940F2883AD0D3 /* PBXContainerItemProxy */;
-		};
-		1217B825FA544F7296B4916F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 067813A474F847C299EDD687 /* gtest */;
-			targetProxy = D97A6169D46A4CDFAAC90C87 /* PBXContainerItemProxy */;
-		};
-		3B1C6650D0594A21990D25A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 067813A474F847C299EDD687 /* gtest */;
-			targetProxy = 4BEAB66981DE44558ECE6598 /* PBXContainerItemProxy */;
-		};
-		40C50002389640CD88B24B81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E9ED6CF165B24CF3A3B711A1 /* gmock_main */;
-			targetProxy = A807D03714A24AFEA893CF8B /* PBXContainerItemProxy */;
-		};
-		4FEAEC452B2944D692E67B0A /* PBXTargetDependency */ = {
+		143A6E3EB5664868A673A1F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CAE98F9241274BE791FA2FA8 /* ALL_BUILD */;
-			targetProxy = EAB62F8E315E49B2BABA9F29 /* PBXContainerItemProxy */;
+			targetProxy = 71F154FC54444898A383B9EC /* PBXContainerItemProxy */;
 		};
-		7005DEBA8F464930B1797ECD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2CF57F332D464DA9800A5FEE /* gtest_main */;
-			targetProxy = 06DEF11152E7437D8001E5D0 /* PBXContainerItemProxy */;
-		};
-		8691B54CA5C244A2B72D133A /* PBXTargetDependency */ = {
+		14AFE0EC996C4CC889EB8F52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 067813A474F847C299EDD687 /* gtest */;
-			targetProxy = BB997954AEF94580971C043C /* PBXContainerItemProxy */;
+			targetProxy = 9072268B4B9540BCA0524068 /* PBXContainerItemProxy */;
 		};
-		A3ABE92B3B7442BABBD7BF34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 90E8B5BA302A4CBBBFB5EE08 /* ZERO_CHECK */;
-			targetProxy = DCA9DEE52B534FFF922F50B6 /* PBXContainerItemProxy */;
-		};
-		D1F0D183E14C45D6872A22D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 067813A474F847C299EDD687 /* gtest */;
-			targetProxy = 6FC3B300E1C24397878AC885 /* PBXContainerItemProxy */;
-		};
-		E6EBF3A79932459C961237F1 /* PBXTargetDependency */ = {
+		1A00DC1A090D4EABB06B1E1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 900F942FB1F04B13B7B06C00 /* gmock */;
-			targetProxy = 98753B125360444590BDE2ED /* PBXContainerItemProxy */;
+			targetProxy = 8E09D9A2B2334B57BF8AD0AA /* PBXContainerItemProxy */;
+		};
+		2B0CF15C95664FD795CE3ABE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 067813A474F847C299EDD687 /* gtest */;
+			targetProxy = 0434DA0D0C56417A837CD7CF /* PBXContainerItemProxy */;
+		};
+		2DF2F14BD9734FB6A99BB3AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 067813A474F847C299EDD687 /* gtest */;
+			targetProxy = 5B8C4E3CAD40479395A6251A /* PBXContainerItemProxy */;
+		};
+		32EA9D73665C4A5493701648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9ED6CF165B24CF3A3B711A1 /* gmock_main */;
+			targetProxy = B864557E0E40440BAD5DE311 /* PBXContainerItemProxy */;
+		};
+		8B0620F5064F4EA58AD401CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 067813A474F847C299EDD687 /* gtest */;
+			targetProxy = 380791B0CA5E4A24BCEBA6C6 /* PBXContainerItemProxy */;
+		};
+		D584813B5D624BA2A9E1932B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF57F332D464DA9800A5FEE /* gtest_main */;
+			targetProxy = 8F0D887623E14AA4B0608D94 /* PBXContainerItemProxy */;
+		};
+		D5EDF4AED77540C8B12E2F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 900F942FB1F04B13B7B06C00 /* gmock */;
+			targetProxy = D45F75F3A72046F391D853EE /* PBXContainerItemProxy */;
+		};
+		D97C33906B054F3280A7171F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E8B5BA302A4CBBBFB5EE08 /* ZERO_CHECK */;
+			targetProxy = F31DCC55FA5342E29E633A30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1B086A880D0E47DFAF3FB98D /* MinSizeRel */ = {
+		0B0C745A4369457CA505D90D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -571,73 +571,7 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		1C67B981396940AABD3CED04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Release";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gmock_main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		1D1E61F3DDAA400BA0C95F5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		3813D78475DE4C86B7DFAB56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
 				USE_HEADERMAP = NO;
@@ -645,79 +579,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		39593A8D388A43C680E67C3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Debug";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "   -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gtest_maind;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		400E4C77C9F449AE9F5AC719 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/RelWithDebInfo";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gmock_main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		4191FBA800254E06BBFD3E64 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		43ABC86088BD476596DDFC4B /* Release */ = {
+		258F4922279645D4B09D5021 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -743,33 +605,248 @@ exit 0";
 			};
 			name = Release;
 		};
-		44B0530FF5E044D487999869 /* RelWithDebInfo */ = {
+		2FA0C97FADFA4EC38C72B6E8 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/RelWithDebInfo";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		39FACE9C6A854DEEAA2557EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3DD8D9D320614F79894A4C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Debug";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_CPLUSPLUSFLAGS = "   -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gtest_main;
+				PRODUCT_NAME = gmock_maind;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		40228E4D1A2048E6A3A7CEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		416A0D80E63441B680FFEF65 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		44CCD223DF6D4FFBA913EBCD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4AFB5FD7FD3D468DA662FF84 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4F9E837E7400469E9CDA17EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5085B7DD6A004C95AFB779AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5A712F6B2A124DBABB800F19 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6F4BE4F4E3174A278487D004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		73CA5F40592046C381975AA9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		58C5A60F770042EB81FD7A22 /* RelWithDebInfo */ = {
+		7AA6A144980D4C35817E708F /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -796,7 +873,106 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		5E93DA72CC594E73AAFDA388 /* RelWithDebInfo */ = {
+		823FF6AE29B74E8198D7F72D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8E79E5DD78BE424B9EA6D1EA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		957F52CDC95340458F5813B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_maind;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9E29AEC9ABA54AF4BDA93C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A296561542474D82B48998F7 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -816,82 +992,51 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		609CEB44227643079F36DE35 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/RelWithDebInfo";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gtest;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		6211A39D61DD4A3EBE176565 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		63CEBA813AB44BACA68FE022 /* RelWithDebInfo */ = {
+		C43A61CBC4534E11A9A779DB /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
 				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/build";
 			};
-			name = RelWithDebInfo;
+			name = MinSizeRel;
 		};
-		7207B7EF77EA424A960C45E1 /* Debug */ = {
+		C6AF4C5F431D43318AB90B23 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
+				PRODUCT_NAME = gtest_main;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
-		92F72B1045124C9AB8D24751 /* Debug */ = {
+		C82D4E0D856F4D2383AAB9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/build";
+			};
+			name = Release;
+		};
+		D857FD3B150C43A0A7627F39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -918,115 +1063,33 @@ exit 0";
 			};
 			name = Debug;
 		};
-		92F8BD26BA34401F90406B0B /* Release */ = {
+		D8C42214521A45B8896CADED /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Release";
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/RelWithDebInfo";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gmock;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		96F4D50F15A84308A13FED26 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		9B1F385880214F29A92E50D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Release";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gtest_main;
+				PRODUCT_NAME = gtest;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = RelWithDebInfo;
 		};
-		9CF372A8196A466CB08BA1C1 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/build";
-			};
-			name = MinSizeRel;
-		};
-		AEB91E270CD649BE8AE77A60 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/MinSizeRel";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gmock_main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		B3C0ED4230DC4D19B2981744 /* Debug */ = {
+		DF42E5B352BF4F8EAE1C2CA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1052,76 +1115,85 @@ exit 0";
 			};
 			name = Debug;
 		};
-		C980D2C846C9473CBD554A27 /* RelWithDebInfo */ = {
+		DFFB8BED34F0433AA7C204FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = gmock_main;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E807A740925645BE9D9EEADA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		D0C40A0C9FD248BD8FFEC2E2 /* Release */ = {
+		E958E86A7ADD4BA39BACF2D9 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = gtest_main;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
+				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = RelWithDebInfo;
 		};
-		D8499E9A32A047AB9E99FEF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/build";
-			};
-			name = Release;
-		};
-		D9E0C9BA72BE4A888D575906 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		E0C8FB0901F64339B51780E4 /* Debug */ = {
+		E97AAF8267924EEAAE67838C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
@@ -1130,36 +1202,16 @@ exit 0";
 			};
 			name = Debug;
 		};
-		EFC4BD9F937A4B67AFD71D59 /* MinSizeRel */ = {
+		EF4C3C06409046C0B86F72ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		F3A91C0372C84F49BA848CFF /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/MinSizeRel";
+				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Release";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock");
@@ -1175,35 +1227,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = MinSizeRel;
+			name = Release;
 		};
-		F79F1DCD5202486691974F7E /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/MinSizeRel";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gtest;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		FA828ACFDEE6455DA178D134 /* MinSizeRel */ = {
+		F626A4E6FC394EB6B8856358 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1220,128 +1246,102 @@ exit 0";
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gtest_main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googletest";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		FC89A913C833465AA90BB332 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/lib/Debug";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CC_PLATFORM_WINDOWS=2'","'CC_PLATFORM_MAC_OSX=4'","'CC_PLATFORM_MAC_IOS=1'","'CC_PLATFORM_ANDROID=3'","'CC_PLATFORM=4'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "   -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = gmock_maind;
+				PRODUCT_NAME = gmock_main;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-build/googlemock";
 				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googlemock","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest/include","/Users/rosa/WorkSpace/editor-3d/resources/3d/cocos2d-x-lite/unit-test/build/googletest-src/googletest");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12B900E72F4746E5809B325C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		207E61B1C8334AD582F3C4E6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96F4D50F15A84308A13FED26 /* Debug */,
-				D0C40A0C9FD248BD8FFEC2E2 /* Release */,
-				4191FBA800254E06BBFD3E64 /* MinSizeRel */,
-				C980D2C846C9473CBD554A27 /* RelWithDebInfo */,
+				4F9E837E7400469E9CDA17EE /* Debug */,
+				5085B7DD6A004C95AFB779AF /* Release */,
+				2FA0C97FADFA4EC38C72B6E8 /* MinSizeRel */,
+				A296561542474D82B48998F7 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		1BDCFEB8C8314BEC8AC9EE91 /* Build configuration list for PBXNativeTarget "gmock_main" */ = {
+		4136FB914D2B417C8D0B9F72 /* Build configuration list for PBXNativeTarget "gmock_main" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC89A913C833465AA90BB332 /* Debug */,
-				1C67B981396940AABD3CED04 /* Release */,
-				AEB91E270CD649BE8AE77A60 /* MinSizeRel */,
-				400E4C77C9F449AE9F5AC719 /* RelWithDebInfo */,
+				3DD8D9D320614F79894A4C76 /* Debug */,
+				DFFB8BED34F0433AA7C204FF /* Release */,
+				F626A4E6FC394EB6B8856358 /* MinSizeRel */,
+				E807A740925645BE9D9EEADA /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		2CD2BE5F720443798822D3F1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		59C581056A094467B2BF8ACB /* Build configuration list for PBXNativeTarget "gtest_main" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3813D78475DE4C86B7DFAB56 /* Debug */,
-				1D1E61F3DDAA400BA0C95F5B /* Release */,
-				1B086A880D0E47DFAF3FB98D /* MinSizeRel */,
-				5E93DA72CC594E73AAFDA388 /* RelWithDebInfo */,
+				957F52CDC95340458F5813B4 /* Debug */,
+				9E29AEC9ABA54AF4BDA93C30 /* Release */,
+				C6AF4C5F431D43318AB90B23 /* MinSizeRel */,
+				E958E86A7ADD4BA39BACF2D9 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		347715A28EF546E3AB9FC231 /* Build configuration list for PBXNativeTarget "gtest" */ = {
+		6EE2002E84DB45EBB2C9297C /* Build configuration list for PBXAggregateTarget "install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3C0ED4230DC4D19B2981744 /* Debug */,
-				43ABC86088BD476596DDFC4B /* Release */,
-				F79F1DCD5202486691974F7E /* MinSizeRel */,
-				609CEB44227643079F36DE35 /* RelWithDebInfo */,
+				0B0C745A4369457CA505D90D /* Debug */,
+				6F4BE4F4E3174A278487D004 /* Release */,
+				4AFB5FD7FD3D468DA662FF84 /* MinSizeRel */,
+				73CA5F40592046C381975AA9 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		493A276FC1744384B502B3A9 /* Build configuration list for PBXAggregateTarget "install" */ = {
+		8F37BFA71DB747BC862232A5 /* Build configuration list for PBXNativeTarget "gtest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7207B7EF77EA424A960C45E1 /* Debug */,
-				D9E0C9BA72BE4A888D575906 /* Release */,
-				EFC4BD9F937A4B67AFD71D59 /* MinSizeRel */,
-				6211A39D61DD4A3EBE176565 /* RelWithDebInfo */,
+				DF42E5B352BF4F8EAE1C2CA7 /* Debug */,
+				258F4922279645D4B09D5021 /* Release */,
+				44CCD223DF6D4FFBA913EBCD /* MinSizeRel */,
+				D8C42214521A45B8896CADED /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		89DC8351FDFA4ED28FC4CA9D /* Build configuration list for PBXNativeTarget "gtest_main" */ = {
+		92F58116635A49E9BB69A736 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39593A8D388A43C680E67C3C /* Debug */,
-				9B1F385880214F29A92E50D0 /* Release */,
-				FA828ACFDEE6455DA178D134 /* MinSizeRel */,
-				44B0530FF5E044D487999869 /* RelWithDebInfo */,
+				39FACE9C6A854DEEAA2557EC /* Debug */,
+				40228E4D1A2048E6A3A7CEC8 /* Release */,
+				5A712F6B2A124DBABB800F19 /* MinSizeRel */,
+				8E79E5DD78BE424B9EA6D1EA /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B65DD93A072A4CCC8C4F0465 /* Build configuration list for PBXProject "googletest-distribution" */ = {
+		B08689DA30F6406D96200CAD /* Build configuration list for PBXNativeTarget "gmock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0C8FB0901F64339B51780E4 /* Debug */,
-				D8499E9A32A047AB9E99FEF0 /* Release */,
-				9CF372A8196A466CB08BA1C1 /* MinSizeRel */,
-				63CEBA813AB44BACA68FE022 /* RelWithDebInfo */,
+				D857FD3B150C43A0A7627F39 /* Debug */,
+				EF4C3C06409046C0B86F72ED /* Release */,
+				823FF6AE29B74E8198D7F72D /* MinSizeRel */,
+				7AA6A144980D4C35817E708F /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		F0B1B26C93D34F99BE95EFCC /* Build configuration list for PBXNativeTarget "gmock" */ = {
+		EC7F5A01E7F045A9B513B769 /* Build configuration list for PBXProject "googletest-distribution" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92F72B1045124C9AB8D24751 /* Debug */,
-				92F8BD26BA34401F90406B0B /* Release */,
-				F3A91C0372C84F49BA848CFF /* MinSizeRel */,
-				58C5A60F770042EB81FD7A22 /* RelWithDebInfo */,
+				E97AAF8267924EEAAE67838C /* Debug */,
+				C82D4E0D856F4D2383AAB9E5 /* Release */,
+				C43A61CBC4534E11A9A779DB /* MinSizeRel */,
+				416A0D80E63441B680FFEF65 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
