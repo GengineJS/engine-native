@@ -143,13 +143,13 @@ void PipelineUBO::updateCameraUBOView(const RenderPipeline *pipeline, std::array
         memcpy(uboCameraView.data() + UBOCamera::MAT_PROJ_INV_OFFSET, camera->matProjInvOffscreen.m, sizeof(cc::Mat4));
         memcpy(uboCameraView.data() + UBOCamera::MAT_VIEW_PROJ_OFFSET, camera->matViewProjOffscreen.m, sizeof(cc::Mat4));
         memcpy(uboCameraView.data() + UBOCamera::MAT_VIEW_PROJ_INV_OFFSET, camera->matViewProjInvOffscreen.m, sizeof(cc::Mat4));
-        uboCameraView[UBOCamera::CAMERA_POS_OFFSET + 3] = device->getCapabilities().screenSpaceSignY * device->getCapabilities().UVSpaceSignY;
+        uboCameraView[UBOCamera::CAMERA_POS_OFFSET + 3] = getCombineSignY();
     } else {
         memcpy(uboCameraView.data() + UBOCamera::MAT_PROJ_OFFSET, camera->matProj.m, sizeof(cc::Mat4));
         memcpy(uboCameraView.data() + UBOCamera::MAT_PROJ_INV_OFFSET, camera->matProjInv.m, sizeof(cc::Mat4));
         memcpy(uboCameraView.data() + UBOCamera::MAT_VIEW_PROJ_OFFSET, camera->matViewProj.m, sizeof(cc::Mat4));
         memcpy(uboCameraView.data() + UBOCamera::MAT_VIEW_PROJ_INV_OFFSET, camera->matViewProjInv.m, sizeof(cc::Mat4));
-        uboCameraView[UBOCamera::CAMERA_POS_OFFSET + 3] = device->getCapabilities().screenSpaceSignY;
+        uboCameraView[UBOCamera::CAMERA_POS_OFFSET + 3] = getCombineSignY();
     }
 
     if (fog->enabled) {
@@ -202,7 +202,7 @@ void PipelineUBO::updateShadowUBOView(const RenderPipeline *pipeline, std::array
             }
 
             const auto matShadowView  = matShadowCamera.getInversed();
-            const auto projectionSinY = device->getCapabilities().screenSpaceSignY * device->getCapabilities().UVSpaceSignY;
+            const auto projectionSinY = device->getCapabilities().clipSpaceSignY;
             Mat4::createOrthographicOffCenter(-x, x, -y, y, shadowInfo->nearValue, farClamp, device->getCapabilities().clipSpaceMinZ, projectionSinY, &matShadowViewProj);
 
             matShadowViewProj.multiply(matShadowView);
@@ -248,7 +248,7 @@ void PipelineUBO::updateShadowUBOLightView(const RenderPipeline *pipeline, std::
             }
 
             const auto matShadowView  = matShadowCamera.getInversed();
-            const auto projectionSinY = device->getCapabilities().screenSpaceSignY * device->getCapabilities().UVSpaceSignY;
+            const auto projectionSinY = device->getCapabilities().clipSpaceSignY;
             Mat4::createOrthographicOffCenter(-x, x, -y, y, shadowInfo->nearValue, farClamp, device->getCapabilities().clipSpaceMinZ, projectionSinY, &matShadowViewProj);
 
             matShadowViewProj.multiply(matShadowView);
@@ -270,13 +270,21 @@ void PipelineUBO::updateShadowUBOLightView(const RenderPipeline *pipeline, std::
     memcpy(shadowUBO.data() + UBOShadow::SHADOW_COLOR_OFFSET, &shadowInfo->color, sizeof(Vec4));
     memcpy(shadowUBO.data() + UBOShadow::SHADOW_INFO_OFFSET, &shadowInfos, sizeof(shadowInfos));
 }
+static uint8_t _combineSignY = 0;
+uint8_t PipelineUBO::getCombineSignY() {
+    return _combineSignY;
+}
+
+void PipelineUBO::initCombineSignY() {
+    _combineSignY = static_cast<uint8_t>(_device->getCapabilities().screenSpaceSignY * 0.5 + 0.5) << 1 | static_cast<uint8_t>(_device->getCapabilities().clipSpaceSignY * 0.5 + 0.5);
+}
 
 void PipelineUBO::activate(gfx::Device *device, RenderPipeline *pipeline) {
     _device   = device;
     _pipeline = pipeline;
 
     const auto descriptorSet = pipeline->getDescriptorSet();
-
+    initCombineSignY();
     auto globalUBO = _device->createBuffer({
         gfx::BufferUsageBit::UNIFORM | gfx::BufferUsageBit::TRANSFER_DST,
         gfx::MemoryUsageBit::HOST | gfx::MemoryUsageBit::DEVICE,
