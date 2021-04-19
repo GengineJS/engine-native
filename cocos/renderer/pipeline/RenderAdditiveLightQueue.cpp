@@ -97,23 +97,23 @@ void RenderAdditiveLightQueue::recordCommandBuffer(gfx::Device *device, gfx::Ren
     for (const auto &lightPass : _lightPasses) {
         const auto *const subModel       = lightPass.subModel;
         const auto *const pass           = lightPass.pass;
-        const auto &dynamicOffsets = lightPass.dynamicOffsets;
-        auto *      shader         = lightPass.shader;
-        const auto  lights         = lightPass.lights;
-        auto *      ia             = subModel->getInputAssembler();
-        auto *      pso            = PipelineStateManager::getOrCreatePipelineState(pass, shader, ia, renderPass);
-        auto *      descriptorSet  = subModel->getDescriptorSet();
+        const auto &      dynamicOffsets = lightPass.dynamicOffsets;
+        auto *            shader         = lightPass.shader;
+        const auto        lights         = lightPass.lights;
+        auto *            ia             = subModel->getInputAssembler();
+        auto *            pso            = PipelineStateManager::getOrCreatePipelineState(pass, shader, ia, renderPass);
+        auto *            descriptorSet  = subModel->getDescriptorSet();
 
         cmdBuffer->bindPipelineState(pso);
-        cmdBuffer->bindDescriptorSet(MATERIAL_SET, pass->getDescriptorSet());
+        cmdBuffer->bindDescriptorSet(materialSet, pass->getDescriptorSet());
         cmdBuffer->bindInputAssembler(ia);
 
         for (size_t i = 0; i < dynamicOffsets.size(); ++i) {
             const auto *light               = lights[i];
             auto *      globalDescriptorSet = getOrCreateDescriptorSet(light);
             _dynamicOffsets[0]              = dynamicOffsets[i];
-            cmdBuffer->bindDescriptorSet(GLOBAL_SET, globalDescriptorSet);
-            cmdBuffer->bindDescriptorSet(LOCAL_SET, descriptorSet, _dynamicOffsets);
+            cmdBuffer->bindDescriptorSet(globalSet, globalDescriptorSet);
+            cmdBuffer->bindDescriptorSet(localSet, descriptorSet, _dynamicOffsets);
             cmdBuffer->draw(ia);
         }
     }
@@ -139,7 +139,7 @@ void RenderAdditiveLightQueue::gatherLightPasses(const Camera *camera, gfx::Comm
         _lightIndices.clear();
         for (size_t i = 0; i < _validLights.size(); i++) {
             const auto *const light    = _validLights[i];
-            const bool isCulled = cullingLight(light, model);
+            const bool        isCulled = cullingLight(light, model);
             if (!isCulled) {
                 _lightIndices.emplace_back(i);
             }
@@ -147,11 +147,11 @@ void RenderAdditiveLightQueue::gatherLightPasses(const Camera *camera, gfx::Comm
 
         if (_lightIndices.empty()) continue;
         const auto *const subModelArrayID = model->getSubModelID();
-        const auto subModelCount   = subModelArrayID[0];
+        const auto        subModelCount   = subModelArrayID[0];
         for (unsigned j = 1; j <= subModelCount; j++) {
             const auto lightPassIdx = lightPassIndices[j - 1];
             if (lightPassIdx == UINT_MAX) continue;
-            const auto *const subModel      = model->getSubModelView(subModelArrayID[j]);
+            const auto *const subModel      = cc::pipeline::ModelView::getSubModelView(subModelArrayID[j]);
             const auto *const pass          = subModel->getPassView(lightPassIdx);
             auto *            descriptorSet = subModel->getDescriptorSet();
             descriptorSet->bindBuffer(UBOForwardLight::BINDING, _firstLightBufferView);
@@ -170,8 +170,8 @@ void RenderAdditiveLightQueue::destroy() {
         descriptorSet->getBuffer(UBOShadow::BINDING)->destroy();
         descriptorSet->getSampler(SHADOWMAP::BINDING)->destroy();
         descriptorSet->getTexture(SHADOWMAP::BINDING)->destroy();
-        descriptorSet->getSampler(SPOT_LIGHTING_MAP::BINDING)->destroy();
-        descriptorSet->getTexture(SPOT_LIGHTING_MAP::BINDING)->destroy();
+        descriptorSet->getSampler(SPOTLIGHTINGMAP::BINDING)->destroy();
+        descriptorSet->getTexture(SPOTLIGHTINGMAP::BINDING)->destroy();
         descriptorSet->destroy();
     }
     _descriptorSetMap.clear();
@@ -192,10 +192,10 @@ void RenderAdditiveLightQueue::clear() {
 void RenderAdditiveLightQueue::gatherValidLights(const Camera *camera) {
     const auto *const scene              = camera->getScene();
     const auto *const sphereLightArrayID = scene->getSphereLightArrayID();
-    auto       count              = sphereLightArrayID ? sphereLightArrayID[0] : 0;
-    Sphere     sphere;
+    auto              count              = sphereLightArrayID ? sphereLightArrayID[0] : 0;
+    Sphere            sphere;
     for (unsigned i = 1; i <= count; i++) {
-        const auto *const light = scene->getSphereLight(sphereLightArrayID[i]);
+        const auto *const light = cc::pipeline::Scene::getSphereLight(sphereLightArrayID[i]);
         sphere.setCenter(light->position);
         sphere.setRadius(light->range);
         if (sphere_frustum(&sphere, camera->getFrustum())) {
@@ -204,9 +204,9 @@ void RenderAdditiveLightQueue::gatherValidLights(const Camera *camera) {
         }
     }
     const auto *const spotLightArrayID = scene->getSpotLightArrayID();
-    count                       = spotLightArrayID ? spotLightArrayID[0] : 0;
+    count                              = spotLightArrayID ? spotLightArrayID[0] : 0;
     for (unsigned i = 1; i <= count; i++) {
-        const auto *const light = scene->getSpotLight(spotLightArrayID[i]);
+        const auto *const light = cc::pipeline::Scene::getSpotLight(spotLightArrayID[i]);
         sphere.setCenter(light->position);
         sphere.setRadius(light->range);
         if (sphere_frustum(&sphere, camera->getFrustum())) {
@@ -219,9 +219,9 @@ void RenderAdditiveLightQueue::gatherValidLights(const Camera *camera) {
 bool RenderAdditiveLightQueue::cullingLight(const Light *light, const ModelView *model) {
     switch (light->getType()) {
         case LightType::SPHERE:
-            return model->worldBoundsID && !aabb_aabb(model->getWorldBounds(), light->getAABB());
+            return model->worldBoundsID && !aabbAabb(model->getWorldBounds(), light->getAABB());
         case LightType::SPOT:
-            return model->worldBoundsID && (!aabb_aabb(model->getWorldBounds(), light->getAABB()) || !aabb_frustum(model->getWorldBounds(), light->getFrustum()));
+            return model->worldBoundsID && (!aabbAabb(model->getWorldBounds(), light->getAABB()) || !aabbFrustum(model->getWorldBounds(), light->getFrustum()));
         default: return false;
     }
 }
@@ -260,8 +260,8 @@ void RenderAdditiveLightQueue::addRenderQueue(const PassView *pass, const SubMod
 }
 
 void RenderAdditiveLightQueue::updateUBOs(const Camera *camera, gfx::CommandBuffer *cmdBuffer) {
-    const auto exposure        = camera->exposure;
-    const auto validLightCount = _validLights.size();
+    const auto  exposure        = camera->exposure;
+    const auto  validLightCount = _validLights.size();
     auto *const sceneData       = _pipeline->getPipelineSceneData();
     auto *const sharedData      = sceneData->getSharedData();
     if (validLightCount > _lightBufferCount) {
@@ -327,9 +327,9 @@ void RenderAdditiveLightQueue::updateUBOs(const Camera *camera, gfx::CommandBuff
 
 void RenderAdditiveLightQueue::updateLightDescriptorSet(const Camera *camera, gfx::CommandBuffer *cmdBuffer) {
     auto *const       sceneData  = _pipeline->getPipelineSceneData();
-    auto *       shadowInfo = sceneData->getSharedData()->getShadows();
+    auto *            shadowInfo = sceneData->getSharedData()->getShadows();
     const auto *const scene      = camera->getScene();
-    const Light *mainLight  = nullptr;
+    const Light *     mainLight  = nullptr;
     if (scene->mainLightID) mainLight = scene->getMainLight();
 
     for (const auto *light : _validLights) {
@@ -339,7 +339,7 @@ void RenderAdditiveLightQueue::updateLightDescriptorSet(const Camera *camera, gf
         }
 
         descriptorSet->bindSampler(SHADOWMAP::BINDING, _sampler);
-        descriptorSet->bindSampler(SPOT_LIGHTING_MAP::BINDING, _sampler);
+        descriptorSet->bindSampler(SPOTLIGHTINGMAP::BINDING, _sampler);
         // Main light sampler binding
         descriptorSet->bindTexture(SHADOWMAP::BINDING, _pipeline->getDefaultTexture());
         descriptorSet->update();
@@ -354,6 +354,7 @@ void RenderAdditiveLightQueue::updateLightDescriptorSet(const Camera *camera, gf
                 }
 
                 const auto &matShadowCamera = light->getNode()->worldMatrix;
+                memcpy(_shadowUBO.data() + UBOShadow::MAT_LIGHT_VIEW_OFFSET, matShadowCamera.m, sizeof(matShadowCamera));
 
                 const auto matShadowView = matShadowCamera.getInversed();
 
@@ -363,17 +364,18 @@ void RenderAdditiveLightQueue::updateLightDescriptorSet(const Camera *camera, gf
                 matShadowViewProj.multiply(matShadowView);
 
                 // shadow info
-                float shadowInfos[4] = {shadowInfo->size.x, shadowInfo->size.y, static_cast<float>(shadowInfo->pcfType), shadowInfo->bias};
-                memcpy(_shadowUBO.data() + UBOShadow::MAT_LIGHT_VIEW_PROJ_OFFSET, matShadowViewProj.m, sizeof(matShadowViewProj));
-                const float color[4] = {shadowInfo->color.x, shadowInfo->color.y, shadowInfo->color.z, shadowInfo->color.w};
-                memcpy(_shadowUBO.data() + UBOShadow::SHADOW_COLOR_OFFSET, color, sizeof(float) * 4);
-                memcpy(_shadowUBO.data() + UBOShadow::SHADOW_INFO_OFFSET, &shadowInfos, sizeof(shadowInfos));
+                float shadowNFLSInfos[4] = {shadowInfo->nearValue, shadowInfo->farValue, static_cast<float>(shadowInfo->linear), static_cast<float>(shadowInfo->selfShadow)};
+                memcpy(_shadowUBO.data() + UBOShadow::SHADOW_NEAR_FAR_LINEAR_SELF_INFO_OFFSET, &shadowNFLSInfos, sizeof(shadowNFLSInfos));
+
+                float shadowWHPBInfos[4] = {shadowInfo->size.x, shadowInfo->size.y, static_cast<float>(shadowInfo->pcfType), shadowInfo->bias};
+                memcpy(_shadowUBO.data() + UBOShadow::SHADOW_WIDTH_HEIGHT_PCF_BIAS_INFO_OFFSET, &shadowWHPBInfos, sizeof(shadowWHPBInfos));
+
                 // Spot light sampler binding
                 const auto &shadowFramebufferMap = sceneData->getShadowFramebufferMap();
                 if (shadowFramebufferMap.count(light) > 0) {
                     auto *texture = shadowFramebufferMap.at(light)->getColorTextures()[0];
                     if (texture) {
-                        descriptorSet->bindTexture(SPOT_LIGHTING_MAP::BINDING, texture);
+                        descriptorSet->bindTexture(SPOTLIGHTINGMAP::BINDING, texture);
                     }
                 }
             } break;
@@ -383,10 +385,22 @@ void RenderAdditiveLightQueue::updateLightDescriptorSet(const Camera *camera, gf
                     updateDirLight(shadowInfo, mainLight, _shadowUBO);
                 }
                 // Reserve sphere light shadow interface
+                float shadowNFLSInfos[4] = {0.01F, light->range, static_cast<float>(shadowInfo->linear), static_cast<float>(shadowInfo->selfShadow)};
+                memcpy(_shadowUBO.data() + UBOShadow::SHADOW_NEAR_FAR_LINEAR_SELF_INFO_OFFSET, &shadowNFLSInfos, sizeof(shadowNFLSInfos));
+
+                float shadowWHPBInfos[4] = {shadowInfo->size.x, shadowInfo->size.y, static_cast<float>(shadowInfo->pcfType), shadowInfo->bias};
+                memcpy(_shadowUBO.data() + UBOShadow::SHADOW_WIDTH_HEIGHT_PCF_BIAS_INFO_OFFSET, &shadowWHPBInfos, sizeof(shadowWHPBInfos));
             } break;
             default:
                 break;
         }
+
+        const float shadowLPNNInfos[4] = {0.0F, static_cast<float>(shadowInfo->packing), shadowInfo->normalBias, 0.0F};
+        memcpy(_shadowUBO.data() + UBOShadow::SHADOW_LIGHT_PACKING_NBIAS_NULL_INFO_OFFSET, &shadowLPNNInfos, sizeof(shadowLPNNInfos));
+
+        const float color[4] = {shadowInfo->color.x, shadowInfo->color.y, shadowInfo->color.z, shadowInfo->color.w};
+        memcpy(_shadowUBO.data() + UBOShadow::SHADOW_COLOR_OFFSET, &color, sizeof(float) * 4);
+
         descriptorSet->update();
 
         cmdBuffer->updateBuffer(descriptorSet->getBuffer(UBOShadow::BINDING), _shadowUBO.data(), UBOShadow::SIZE);
@@ -398,10 +412,10 @@ bool RenderAdditiveLightQueue::getLightPassIndex(const ModelView *model, vector<
     bool hasValidLightPass = false;
 
     const auto *const subModelArrayID = model->getSubModelID();
-    const auto count           = subModelArrayID[0];
+    const auto        count           = subModelArrayID[0];
     for (unsigned i = 1; i <= count; i++) {
-        const auto *const subModel       = model->getSubModelView(subModelArrayID[i]);
-        uint       lightPassIndex = UINT_MAX;
+        const auto *const subModel       = cc::pipeline::ModelView::getSubModelView(subModelArrayID[i]);
+        uint              lightPassIndex = UINT_MAX;
         for (unsigned passIdx = 0; passIdx < subModel->passCount; passIdx++) {
             const auto *const pass = subModel->getPassView(passIdx);
             if (pass->phase == _phaseID) {
@@ -438,8 +452,8 @@ gfx::DescriptorSet *RenderAdditiveLightQueue::getOrCreateDescriptorSet(const Lig
         descriptorSet->bindSampler(SHADOWMAP::BINDING, _sampler);
         descriptorSet->bindTexture(SHADOWMAP::BINDING, _pipeline->getDefaultTexture());
         // Spot light sampler binding
-        descriptorSet->bindSampler(SPOT_LIGHTING_MAP::BINDING, _sampler);
-        descriptorSet->bindTexture(SPOT_LIGHTING_MAP::BINDING, _pipeline->getDefaultTexture());
+        descriptorSet->bindSampler(SPOTLIGHTINGMAP::BINDING, _sampler);
+        descriptorSet->bindTexture(SPOTLIGHTINGMAP::BINDING, _pipeline->getDefaultTexture());
 
         descriptorSet->update();
 
